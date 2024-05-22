@@ -5,7 +5,7 @@ mpHands = mp.solutions.hands
 mpDraw = mp.solutions.drawing_utils
 
 class HandLandmark:
-    def __init__(self, max_num_hands=1, min_detection_confidence=0.5, min_landmark_confidence=0.5):
+    def __init__(self, max_num_hands=2, min_detection_confidence=0.5, min_landmark_confidence=0.5):
         self.hands = mpHands.Hands(max_num_hands=max_num_hands, min_detection_confidence=min_detection_confidence, min_tracking_confidence=min_landmark_confidence)
 
     def findHandLandmarks(self, image, draw=False):

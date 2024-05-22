@@ -1,7 +1,7 @@
 from landmarks import HandLandmark
 import cv2
 
-handLandmark = HandLandmark(min_detection_confidence=0.5, min_landmark_confidence=0.5)
+handLandmark = HandLandmark(max_num_hands=2, min_detection_confidence=0.5, min_landmark_confidence=0.5)
 
 webcam = cv2.VideoCapture(0)
 
